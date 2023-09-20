@@ -88,15 +88,19 @@ const EditorPage = () => {
 
     const [code, setCode] = useState("")
     const codeC = useRef("")
+
     const [inputCode, setInputCode] = useState("")
     const inputcodeC = useRef("")
+
     const [outputCode, setoutputCode] = useState("")
     const outputCodeC = useRef("")
+
     const [clients, setClients] = useStateWithCallback([]);
     const clientsRef = useRef(null);
 
     const [statusId, setStatusId] = useState("");
     const [status, setStatus] = useState("idel");
+
     const [isRunning, setIsRunning] = useState(false);
     // const [isSaving, setIsSaving] = useState(false);
     const [data, setData] = useState({
@@ -269,7 +273,7 @@ const EditorPage = () => {
                         const localElement = audioElements.current[socketRef.current.id];
                         // console.log(localMediaStream.c)
                         if (localElement) {
-                            console.log(localElement)
+                            // console.log(localElement)
                             localElement.volume = 0;
                             localElement.srcObject = localMediaStream.current;
                         }
@@ -583,7 +587,7 @@ const EditorPage = () => {
         if (userId === socketRef.current.id) {
             let interval = setInterval(() => {
                 if (localMediaStream.current) {
-                    console.log(localMediaStream.current.getTracks())
+                    // console.log(localMediaStream.current.getTracks())
                     localMediaStream.current.getTracks()[0].enabled = !isMute;
                     if (isMute) {
                         socketRef.current.emit(ACTIONS.MUTE, {
