@@ -1,0 +1,229 @@
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+}
+
+.formWrapper {
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #4aee88;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.homePageLogo {
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.joinBtn,
+.leaveBtn {
+    background: #4aed88;
+    width: 100px;
+    margin-left: auto;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: #2b824c;
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
+    color: #4aed88;
+    text-decoration: none;
+    border-bottom: 1px solid #4aed88;
+    transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+    color: #368654;
+    border-color: #368654;
+}
+
+.mainWrap {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.aside {
+    background: #1c1e29;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.client {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 19px;
+}
+.userName {
+    margin-top: 2px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    width: 85%;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+.headerWrap{
+    margin-right: 12px;
+    align-items: center;display: flex;flex-direction: row;justify-content: space-between;
+}
+
+.editors{
+    display: flex;
+    flex: 1; 
+    flex-direction: row;
+    padding-top: 5px;
+    height: 87vh;
+}
+.inouWrap{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10px;
+    min-height:calc(100%);
+}
+#mainEditor {
+    /* margin-top: 40px; */
+    height: 100% !important;
+    font-size: 20px;
+    line-height: 1.6;
+    width: 68% !important;
+}
+#inputEditor {
+    margin-bottom: 5px;
+    /* min-height: calc(10); */
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+    width: 100% !important;
+}
+#OutputEditor {
+    /* margin-top: 40px; */
+    /* min-height: calc(38vh); */
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 10px;
+    width: 100% !important;
+}
+.heading{
+    color:rgb(255, 255, 255);
+    font-size: smaller;
+    padding-bottom: 5px;
+}
+
+#demo-select-small{
+    font-size: smaller;
+}
+.editorWrap{
+    margin-top: 10px;
+}
+
+.rightSave{
+    display: inline;
+}
+
+
+/* stype of client list */
+
+
+/* .micBtn {
+    background: #212121;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    box-sizing: content-box;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+.micBtn{
+    background:transparent;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    /* border-radius: 30px; */
+    border: none;
+    padding: 5px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.mic{
+    width: 15px;
+    height: 15px;
+}
